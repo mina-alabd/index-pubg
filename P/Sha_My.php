@@ -59,7 +59,7 @@ bot("sendMessage",[
 👁️‍🗨️¦ 𝑪𝒐𝒖𝒏𝒕𝒓𝒚 » $cty
 ⏱ ¦ 𝑻𝒊𝒎𝒆 » $time
 📝 ¦ 𝑫𝒂𝒕𝒆 » $day/$month/$year
-🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » http://www.$linky/index.html
+🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » www.$linky/index.html
 ",
 'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
