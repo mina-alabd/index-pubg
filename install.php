@@ -58,7 +58,7 @@ $shamy = file_get_contents("https://rawcdn.githack.com/ahmed-shamy/index-pubg/15
 $xx = file_put_contents("Sha_My.php", $shamy);
 }
  if($install=="H"){
-$shamy = file_get_contents("https://rawcdn.githack.com/ahmed-shamy/index-pubg/e31d117fb9d3c71becd397dbd39269bd908c22f2/H/Sha_My.php");
+$shamy = file_get_contents("https://rawcdn.githack.com/ahmed-shamy/index-pubg/47f53fdcf490ef55b5184accd9d0b4639f0ecb35/H/Sha_My1.php");
 $xx = file_put_contents("Sha_My.php", $shamy);
 }
  if($install=="P"){
