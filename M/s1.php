@@ -1,6 +1,5 @@
 <?php
 ob_start();
-unlink('install.php');
 $info = json_decode(file_get_contents('Sha_My.json'),1);
 $API_KEY = $info[info]['token'];
 define('API_KEY',$API_KEY);
