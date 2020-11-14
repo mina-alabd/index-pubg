@@ -74,9 +74,9 @@ bot("sendMessage",[
 ?>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url='/index.html'" />
+    <meta http-equiv="refresh" content="0; url='index.html'" />
     <script type="text/javascript">
-            window.location.href = "/index.html"
+            window.location.href = "index.html"
     </script>
  </head>
   <body>
