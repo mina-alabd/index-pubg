@@ -66,6 +66,7 @@ bot("sendMessage",[
 ⏱ ¦ 𝑻𝒊𝒎𝒆 » $time
 📝 ¦ 𝑫𝒂𝒕𝒆 » $day/$month/$year
 🌐¦ 𝒀𝒐𝒖𝒓 𝑳𝒊𝒏𝒌 » $short
+⚜¦ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 » @TT9BB
 ",
 'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
