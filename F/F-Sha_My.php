@@ -1,10 +1,8 @@
 <?php
 ob_start();
-unlink('install.php');
+unlink('installpubg.php');
 $info = json_decode(file_get_contents('Sha_My.json'),1);
 $API_KEY = $info[info]['token'];
-$index = file_get_contents('https://raw.githubusercontent.com/SoKy-Master/pub/main/index-v111.php');
-$xx = file_put_contents("index.html", $index); 
 
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
