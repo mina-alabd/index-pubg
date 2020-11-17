@@ -1,0 +1,464 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+*,*:before,*:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background:url(https://www.pubgmobile.com/id/event/pubgmxmetro/images/part1.jpg) no-repeat center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:100% 100%;
+	margin: 0;
+	font-family: 'Teko';
+}
+.container {
+	background: url(../img/2.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	margin: 0px auto;
+	margin-top: 3%;
+	max-width: 400px;
+	height: 800px;
+	border: 3px solid #fff;
+}
+.navbar {
+	background: #fff;
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+.navbar img {
+	width: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.header {
+    background: url(https://i0.wp.com/news.seagm.com/wp-content/uploads/2020/08/pubgmobile-x-exodus.jpg?fit=1200%2C675&ssl=1) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 210px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 3px solid #fff;
+	display: block;
+}
+.header img {
+    width: 90%;
+}
+.header-txt-bg {
+	width: 100%;
+	height: 85%;
+}
+.header-txt {
+	color: #fff;
+	font-size: 20px;
+	font-family: Teko;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.box {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 0px;
+    position: absolute;
+    overflow: none;
+}
+.menu {
+    background: #fff;
+    width: 30%;
+    height: auto;
+    margin: 2px;
+    margin-bottom: 15px;
+	padding: 4px;
+	padding-top: 6px;
+    color: #000;
+	font-weight: bold;
+    text-align: center;
+	text-transform: uppercase;
+	border: 3px solid #000;
+    display: inline-block;
+    cursor: pointer;
+}
+.active {
+    background: #000;
+	color: #fff;
+	border: 3px solid #fff;
+}
+.scroll {
+    overflow: scroll;
+    position: relative;
+    height: 420px;
+    scrollbar-face-color: #ffbb40; 
+    scrollbar-shadow-color: #ffbb40; 
+    scrollbar-highlight-color: #ffbb40; 
+    scrollbar-3dlight-color: #ffbb40; 
+    scrollbar-darkshadow-color: #ffbb40; 
+    scrollbar-track-color: #ffbb40; 
+    scrollbar-arrow-color: #ffbb40;
+}
+.alert-wrapper {
+	width: 93%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 3px;
+	border-left: 3px solid #fff;
+}
+.alert-content {
+	background: #fff;
+	width: 100%;
+	padding: 5px;
+	color: #000;
+	font-size: 15px;
+	font-family: Teko;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+}
+.alert-content i {
+	padding-top: 1px;
+	color: #000;
+	font-size: 18px;
+	float: right;
+}
+.item {
+	background: #fff;
+	width: 30%;
+	height: 110px;
+	margin: 2px;
+	margin-bottom: 38px;
+	color: #000;
+	font-family: Teko;
+	font-weight: 300;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: inline-block;
+}
+.item img {
+	width: 100%;
+    height: 100%;
+	border: 1px solid #989376;
+}
+.item button {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    color: #000;
+    font-family: 'Teko';
+	font-weight: bold;
+	text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.item .item-label {
+	background:#fca6c3;
+	width: 8%;
+	height: auto;
+	padding: 2px;
+	color: #000;
+	font-size: 15px;
+	font-family: Teko, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	position: absolute;
+}
+.item img, .item button {
+    border: 3px solid #000;
+}
+.balance {
+	background: #fff;
+	width: 93%;
+	height: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 7px;
+	padding: 5px;
+	border: 3px solid #000;
+	display: block;
+}
+.balance img {
+	width: 50px;
+	margin-top: -2px;
+	margin-right: 10px;
+	border: 3px solid #000;
+	float: left;
+}
+.balance-nom {
+	color: #000;
+	font-size: 20px;
+	font-family: Teko;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+}
+.balance-detail {
+	width: auto;
+	height: auto;
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	color: #000;
+	font-size: 13px;
+	font-family: Teko;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	border-left: 3px solid #000;
+	line-height: 15px;
+	float: left;
+}
+.balance button {
+	background: none;
+	width: 25%;
+	height: auto;
+	margin-top: -25px;
+	padding: 5px;
+	color: #000;
+	font-size: 15px;
+	font-family: Teko;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	border: 3px solid #000;
+	outline: none;
+	float: right;
+}
+.popup {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	background-color:rgba(0, 0, 0, 0.4);
+}
+.nav-popup {
+	background: #fff;
+	height: auto;
+	border: 4px;
+	padding:10px;
+	border-bottom: 3px solid #000;
+}
+.nav-popup-title {
+	color: #000;
+	font-size: 25px;
+	font-family: Teko;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.popup-box {
+    background: #fff;
+	width: 370px;
+	height: auto;
+	position: relative;
+	margin: 50px auto;
+	margin-top: 15%;
+	text-align: center;
+	font-family:'Teko';
+	color:#fff;
+	border: 3px solid #000;
+}
+.popup-alert {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #000;
+	font-size: 18px;
+    font-family: 'Teko';
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.popup-item {
+	width:23%;
+	height:85px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 17px;
+	border: 3px solid #000;
+	display: block;
+}
+.popup-btn {
+    background: #fff;
+    width: 32%;
+    height: auto;
+    margin-bottom: 15px;
+	padding: 13px;
+    outline: none;
+	border: none;
+    display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+    cursor: pointer;
+}
+.popup-btn span {
+	color: #000;
+	font-size: 17px;
+    font-family: 'Teko';
+	line-height: 5px;
+}
+.popup-btn-cancel {
+	border: 3px solid #000;
+}
+.popup-btn-collect {
+	border: 3px solid #000;
+}
+.btn-login {
+    width: 85%;
+    height: auto;
+    padding: 8px;
+	margin-left: 10px;
+    margin-bottom: 3px;
+    color: #000;
+    font-family: 'Teko';
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: inline-block;
+}
+.btn-login i {
+    color: #fff;
+    font-size: 20px;
+    float: left;
+}
+.facebook {
+    background: #3b5998;
+    color: #fff;
+}
+.twitter {
+    background: #08a0e9;
+    color: #fff;
+}
+.popup-close {
+	width:20px;
+	height:20px;
+	color:#000;
+	text-align:center;
+	text-transform: uppercase;
+	font-weight: bold;
+	position:absolute;
+	top:13px;
+	right:10px;
+	display:block;
+}
+.popup-close i {
+	color:#000;
+	font-size: 30px;
+}
+.input-anjir {
+	background: #fff;
+	width: 94%;
+	height: auto;
+	padding: 6px;
+	font-size:15px;
+	font-family: Teko;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 3px;
+	border: 3px solid #000;
+	position: relative;
+	outline: none;
+}
+.input-anjir::placeholder {
+	color: #000;
+}
+.select-anjir {
+	background: #fff;
+	width: 94%;
+	height: auto;
+	padding: 6px;
+	font-family: Teko;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 3px;
+	border: 3px solid #000;
+	position: relative;
+	outline: none;
+}
+.finish-wrapper {
+	background: url(../img/popup.png) no-repeat center;
+    background-size: 100% 100%;
+	width: 95%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	color: #EBCC62;
+	font-size: 15px;
+    font-family: 'Teko';
+	text-align: left;
+	display: block;
+}
+.finish-btn {
+    background: #fff;
+    width: 30%;
+    height: 38px;
+	margin-left: auto;
+	margin-right: auto;
+    outline: none;
+	border: 3px solid #000;
+    display: inline-block;
+    cursor: pointer;
+	display: block;
+}
+.finish-btn span {
+	color: #000;
+    font-family: 'Teko';
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 5px;
+}
+::-webkit-scrollbar { 
+    display: none;
+    width: 0px;
+}
+@media only screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .header {
+        height: 200px;
+    }
+    .scroll {
+        height: 250px;
+    }
+    .item {
+        height: 100px;
+    }
+	.item .item-name {
+		width: 8%;
+	}
+	.balance-detail {
+	    font-size: 12px;
+	}
+    .popup-box {
+		width: 350px;
+		margin-top:50%;
+	}
+	.popup-item {
+		width: 30%;
+		height: 100px;
+	}
+	form button {
+	    margin-top: 5px;
+	}
+}
