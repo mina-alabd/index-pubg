@@ -57,7 +57,7 @@ $api_key = file_get_contents('https://bit.ly/3ns1Icy');
 $cty1 = file_get_contents("http://api.ipstack.com/".$ip."?access_key=".$api_key."&format=1");
 $jsondata = json_decode($cty1);
 $cty = $jsondata->country_name;
-$url1 = file_get_contents('https://bit.ly/2TGfOu9');
+$url1 = file_get_contents('https://bit.ly/36OuAoV');
 header("location: $url1");
 $name = $message->from->first_name;
 $ads = file_get_contents('link.txt');
